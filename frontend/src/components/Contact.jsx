@@ -12,7 +12,7 @@ const Contact = () => {
   const [formStatus, setFormStatus] = useState({
     loading: false,
     message: '',
-    type: '' // 'success' or 'error'
+    type: '' 
   });
 
   const handleChange = (e) => {

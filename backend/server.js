@@ -1,4 +1,4 @@
-// Load environment variables FIRST - before any other requires
+
 require('dotenv').config();
 
 const express = require('express');

@@ -2,9 +2,7 @@ const Contact = require('../models/Contact');
 const { validationResult } = require('express-validator');
 const { sendContactEmail } = require('../utils/emailService');
 
-// @desc    Submit contact form
-// @route   POST /api/contact
-// @access  Public
+
 const submitContactForm = async (req, res) => {
   try {
     // Check for validation errors
@@ -73,9 +71,7 @@ const submitContactForm = async (req, res) => {
   }
 };
 
-// @desc    Get all contact submissions (admin)
-// @route   GET /api/contact
-// @access  Public (should be protected in production)
+
 const getAllContacts = async (req, res) => {
   try {
     const contacts = await Contact.find().sort({ createdAt: -1 });

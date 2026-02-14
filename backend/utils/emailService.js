@@ -1,23 +1,23 @@
 const nodemailer = require('nodemailer');
 
-// Create email transporter
+
 const transporter = nodemailer.createTransport({
   host: process.env.EMAIL_HOST,
   port: 587,
-  secure: false, // true for 465, false for other ports
+  secure: false, 
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASSWORD,
   },
 });
 
-// Send contact form email
+
 const sendContactEmail = async (contactData) => {
   try {
-    // Email to admin
+    
     const adminMailOptions = {
       from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER, // Send to admin email
+      to: process.env.EMAIL_USER, 
       subject: `New Contact Form Submission from ${contactData.name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #ddd; padding: 20px; border-radius: 8px;">
@@ -42,10 +42,10 @@ const sendContactEmail = async (contactData) => {
       `,
     };
 
-    // Email to customer (confirmation email)
+    
     const customerMailOptions = {
       from: process.env.EMAIL_USER,
-      to: contactData.email, // Send to customer email
+      to: contactData.email, 
       subject: 'We Received Your Message - Thank You for Contacting Us!',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #ddd; padding: 20px; border-radius: 8px;">

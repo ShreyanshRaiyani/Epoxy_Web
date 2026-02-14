@@ -6,7 +6,6 @@ const {
   getAllContacts,
 } = require('../controllers/contactController');
 
-// Validation middleware
 const contactValidation = [
   body('name')
     .trim()
