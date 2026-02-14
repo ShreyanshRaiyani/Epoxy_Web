@@ -76,7 +76,7 @@ const Contact = () => {
 
   const contactInfo = {
     phone: '+91 97128 39092',
-    email: 'info@epoxyFlooring.com',
+    email: 'valaepoxyandgrouting@gmail.com',
     address: 'Ratan Park-2,Uttamnagar, 80Ft Road,Nikol Gam Rd, Nikol, Ahmedabad, Gujarat 382350',
     hours: 'Mon - Sat: 8:00 AM - 6:00 PM',
     // Update with your actual Google Maps embed URL
