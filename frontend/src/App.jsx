@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
+import ProductsUsed from './components/ProductsUsed';
+import FeaturedProject from './components/FeaturedProject';
 import Clients from './components/Clients';
 import Gallery from './components/Gallery';
 import Reviews from './components/Reviews';
@@ -68,8 +70,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      <FeaturedProject />
       <About />
       <Services />
+      <ProductsUsed />
       <Clients />
       <Gallery />
       <Reviews />

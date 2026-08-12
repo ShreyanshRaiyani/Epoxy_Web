@@ -4,6 +4,26 @@ const About = () => {
   return (
     <section id="about" className="about section">
       <div className="container">
+        {/* <div className="about-adani fade-in">
+          <div className="adani-image">
+            <img src="/images/epoxy/industrial.jpeg" alt="Adani industrial epoxy flooring" />
+          </div>
+          <div className="adani-content">
+            <div className="adani-badge">Featured Project</div>
+            <h3>Adani — Industrial Epoxy Flooring</h3>
+            <p>
+              We executed a turnkey epoxy flooring installation for Adani, delivering a
+              high-build industrial epoxy system engineered for continuous heavy traffic and
+              chemical exposure. The scope included expert surface preparation, a high-performance
+              primer, multiple epoxy layers and a textured anti-slip finish — resulting in a
+              low-maintenance, safety-compliant surface with exceptional durability and long-term
+              performance.
+            </p>
+            <div className="adani-cta">
+              <a href="#contact" className="btn btn-outline">Request Project Details</a>
+            </div>
+          </div>
+        </div> */}
         <div className="section-title fade-in">
           <h2>About Us</h2>
           <p>Your Trusted Partner in Premium Flooring Solutions</p>

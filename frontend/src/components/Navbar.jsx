@@ -26,16 +26,22 @@ const Navbar = () => {
       <div className="nav-container">
         <a href="#home" className="nav-logo" onClick={closeMobileMenu}>
           <img src="/images/logo.png" alt="Epoxy Flooring Logo" className="logo-image" />
-          <span className="logo-text">Vala Epoxy</span>
+          <span className="logo-text">Vala Epoxy Grout</span>
         </a>
         
-        <button className="nav-toggle" onClick={toggleMobileMenu}>
+        <button
+          className="nav-toggle"
+          onClick={toggleMobileMenu}
+          aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={isMobileMenuOpen}
+          aria-controls="primary-navigation"
+        >
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
+        <ul id="primary-navigation" className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
           <li>
             <a href="#home" className="nav-link" onClick={closeMobileMenu}>
               Home

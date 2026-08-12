@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => { 
   const whatsappNumber = '+919712839092'; 
-  const heroBg = `${process.env.PUBLIC_URL}/images/Bg.jpg`;
+  const heroBg = `${process.env.PUBLIC_URL}/images/bg1.png`;
 
   return (
     <section
@@ -12,7 +12,7 @@ const Hero = () => {
     >
       <div className="container hero-content">
         <p className="hero-subtitle">Premium Quality Flooring Solutions</p>
-        <h1>Transform Your Space with Professional <span style={{color: '#D4AF37'}}>Epoxy Flooring</span></h1>
+        <h1>Transform Your Space with Professional <span style={{color: '#D4AF37'}}>Epoxy Flooring </span>&<span style={{color: '#D4AF37'}}> Grouting</span></h1>
         <p className="hero-description">
           Delivering exceptional epoxy flooring and grouting services for commercial and 
           residential projects. High-quality materials, skilled professionals, and competitive pricing.
@@ -39,10 +39,6 @@ const Hero = () => {
             
           </svg>
         </div>
-      </div>
-
-      <div className="hero-scroll">
-        <span></span>
       </div>
     </section>
   );
